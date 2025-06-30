@@ -1,0 +1,18 @@
+[project]
+name = "mcp-mizra-groups"
+version = "0.1.0"
+description = "MCP Server for Mizra's groups"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.10.1",
+    "jsonschema>=4.20.0"
+]
+
+
+[project.scripts]
+mcp-mizra-groups = "mcp_mizra_groups:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
